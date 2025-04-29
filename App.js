@@ -1,23 +1,27 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
+import HeaderComponent from './Components/HeaderComponent';
+import PostsComponent from './Components/PostsComponent';
+import FooterComponent from './Components/FooterComponent';
 
 
 // div =view
 //h1, p. etc. = Text
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>My First React Native App!!!</Text>
-      {/* <StatusBar style="auto" /> */}
-    </View>
+    <SafeAreaView style={styles.container}>
+      <HeaderComponent/>
+      <PostsComponent />
+      <FooterComponent />
+    </SafeAreaView>
   );
 }
+// This "styles" is created using a built in component called StyleSheet that allows us to style our components
 
+// flex 1: Takes all of the available space of the parent container
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: 'black',
   },
 });
