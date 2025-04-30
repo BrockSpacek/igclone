@@ -2,7 +2,7 @@ import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import {GrandHotel_400Regular, useFonts} from '@expo-google-fonts/grand-hotel'
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
-import { faHeart } from '@fortawesome/free-regular-svg-icons';
+import { faHeart, faPaperPlane } from '@fortawesome/free-regular-svg-icons';
 
 export default function HeaderComponent() {
 
@@ -27,8 +27,9 @@ export default function HeaderComponent() {
       </View>
 
         {/* This div will be where our buttons or icons are*/}
-      <View>
+      <View style={{flexDirection: "row"}}>
         <FontAwesomeIcon icon={faHeart} style={{color: "white", marginRight: 25}} size={25}/>
+        <FontAwesomeIcon icon={faPaperPlane} style={{color: "white", marginRight: 25}} size={25}/>
       </View>
     </View>
   )
@@ -40,6 +41,7 @@ const styles = StyleSheet.create({
         paddingLeft: 10,
         flexDirection: "row",
         justifyContent: "space-between",
+        alignItems: "center"
     },
     WhiteText: {
         color: "white"
