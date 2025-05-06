@@ -4,7 +4,7 @@ import React from 'react'
 export default function PostsComponent() {
   return (
     <View>
-      <Text>PostsComponent</Text>
+      <Text style={{color: "white"}}>PostsComponent</Text>
     </View>
   )
 }
