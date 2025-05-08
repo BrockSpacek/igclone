@@ -80,6 +80,11 @@ export default function PostsComponent() {
 
             </View>
 
+            <View style={{flex: 1, flexDirection: "row", paddingTop: 5}}>
+              <Text style={{color: "white", fontWeight: "bold", paddingLeft: 14, paddingRight: 5}}>{posts.userName}</Text>
+              <Text style={{color: "white"}}>{posts.description}</Text>
+            </View>
+
           </View>
         )
 
