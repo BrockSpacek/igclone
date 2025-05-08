@@ -59,8 +59,14 @@ export default function PostsComponent() {
                 <Text style={styles.dotsText}>.</Text>
               </View>
 
+              </View>
+              {/* Container for our Image Post */}
+              <View>
+              <Image source={post.postImage} style={styles.postImg}/>
             </View>
-
+            {/* Parent Container for our Icons and Likes*/}
+            <View>
+            </View>
           </View>
         )
 
@@ -101,4 +107,8 @@ dotsText: {
   fontSize: 30,
   lineHeight: 10
 },
+postImg:{
+  height:400,
+  width: "100%",
+}
 })
